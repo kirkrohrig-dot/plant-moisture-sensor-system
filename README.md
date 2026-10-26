@@ -39,5 +39,61 @@ SENSORS
 
 6x M2.5 x 6mm screws
 
+Pin assignment
+
+The three XIAO pins labeled D0, D1 and D2 are GPIO0, GPIO1 and GPIO2, respectively, and all three support ADC input. D4/GPIO22 and D5/GPIO23 are the I²C pins previously used by Alpha’s ADS1115.
+
+Bravo connection	XIAO label	ESPHome pin	Purpose
+Plant 1 signal	D0/A0	GPIO0	ADC channel 1
+Plant 2 signal	D1/A1	GPIO1	ADC channel 2
+Plant 3 signal	D2/A2	GPIO2	ADC channel 3
+All sensor power	3V3	3.3 V output	Continuous sensor power
+All sensor grounds	GND	GND	Common reference
+Wall power	USB-C	5 V USB input	Continuous hub power
+Optional I²C SDA	D4	GPIO22	Reserved/free
+Optional I²C SCL	D5	GPIO23	Reserved/free
+Recommended three-pin connector standard
+
+Use the same pin order on every port:
+
+Connector pin	Signal	Connection
+1	3V3	XIAO 3V3 rail
+2	GND	XIAO GND rail
+3	AOUT	Corresponding ADC filter/input
+
+Clearly mark both halves of every connector. Different capacitive probes sometimes arrange VCC, GND, and AOUT differently even when their boards look identical.
+
+Analog-input wiring
+
+Repeat this circuit three times:
+
+The complete power arrangement is:
+
+XIAO powered through USB-C.
+XIAO 3V3 connected to all three sensor VCC terminals.
+XIAO ground connected to all three sensor grounds.
+One 10 µF capacitor across the 3.3 V and ground distribution rails.
+Optionally place another 0.1 µF capacitor across VCC and GND at each sensor connector.
+
+Do not power the probes from the XIAO’s 5 V/VBUS pin. A probe powered at 5 V might produce an analog output above the ESP32-C6’s safe 3.3 V input level. Powering the probes from 3.3 V keeps their outputs compatible with the ADC.
+
+Filtering-component placement
+
+For each channel:
+
+Connect sensor AOUT to one end of the 10 kΩ resistor.
+Connect the other end to the appropriate XIAO ADC pin.
+Connect the 0.1 µF capacitor between that ADC pin and ground.
+If used, connect the 1 MΩ pull-down between that same ADC pin and ground.
+
+Place the capacitor and optional pull-down on the XIAO side of the 10 kΩ resistor. The one-megohm value affects the reading much less than Alpha’s earlier 100 kΩ pull-down arrangement.
+
+An unplugged port will read close to zero because of the pull-down. Firmware should therefore classify something such as below 0.10 V as disconnected, rather than interpreting it as extremely wet soil.
+
+ADC configuration considerations
+
+ESPHome’s ADC component defaults to a lower voltage range unless attenuation is configured. Use attenuation: auto or verify 12db operation because your expected readings extend to approximately 2.6 V. The ESP32-C6 ADC is 12-bit; that is less precise than Alpha’s 16-bit ADS1115 but easily sufficient for slowly changing soil-moisture readings.
+
+
 6x M2.5 Brass inserts
 
