@@ -91,7 +91,9 @@ Use this sequence independently for all three ports:
 6. Clamp the final result to 0–100%.
 <br>
 Because the sensor relationship is reversed, the basic calculation is:
-![Alt text](img/Formula.jpg)
-![Alt text](img/Formula.jpg)
+
+<img width="707" height="55" alt="Formula" src="https://github.com/user-attachments/assets/ec6d7baa-8199-43e8-b4b8-d1606355d70a" />
+
+
 Apply the disconnected check before this formula.
 
