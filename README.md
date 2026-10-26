@@ -49,7 +49,7 @@ The materials needed for the project are as follows:
 | All sensor ground | GND     | GND    |
 | Wall power        | USB-C   | 5V USB |
 
-##Wiring
+##Wiring  
 
 ###Power
 
