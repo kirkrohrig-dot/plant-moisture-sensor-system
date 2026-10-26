@@ -63,7 +63,7 @@ The complete power arrangement is:
 - One 0.1 µF capacitor across VCC and GND at each sensor connector.
 <br>
 Do not power the probes from the XIAO’s 5 V/VBUS pin. A probe powered at 5 V might produce an analog output above the ESP32-C6’s safe 3.3 V input level. Powering the probes from 3.3 V keeps their outputs compatible with the ADC.
-<br>
+  
 ### Filtering components
 
 For each channel:
