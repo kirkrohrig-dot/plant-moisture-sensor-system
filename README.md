@@ -48,10 +48,11 @@ The materials needed for the project are as follows:
 | All sensor power  | 3V3     | 3.3V   |
 | All sensor ground | GND     | GND    |
 | Wall power        | USB-C   | 5V USB |
-<br>
-##Wiring  
 
-###Power
+
+## Wiring  
+
+### Power
 
 The complete power arrangement is:
 <br>
@@ -63,7 +64,7 @@ The complete power arrangement is:
 <br>
 Do not power the probes from the XIAO’s 5 V/VBUS pin. A probe powered at 5 V might produce an analog output above the ESP32-C6’s safe 3.3 V input level. Powering the probes from 3.3 V keeps their outputs compatible with the ADC.
 <br>
-###Filtering components
+### Filtering components
 
 For each channel:
 <br>
@@ -78,7 +79,7 @@ Place the capacitor and pull-down on the XIAO side of the 10 kΩ resistor. An un
 
 ESPHome’s ADC component defaults to a lower voltage range unless attenuation is configured. Use attenuation: auto or verify 12db operation because your expected readings extend to approximately 2.6 V.
   
-###Calibration
+### Calibration
 
 Use this sequence independently for all three ports:
 <br>
