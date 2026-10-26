@@ -92,7 +92,7 @@ Use this sequence independently for all three ports:
 <br>
 Because the sensor relationship is reversed, the basic calculation is:
 <br>
-$$ \text{Moisture} = 100\times \frac{2.60-V_{\text{measured}}} {2.60-V_{\text{wet}}} $$
+!(https://github.com/kirkrohrig-dot/plant-moisture-sensor-system/blob/main/img/Formula.jpg)
 <br>
 Apply the disconnected check before this formula.
 
