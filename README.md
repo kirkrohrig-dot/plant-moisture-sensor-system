@@ -91,8 +91,7 @@ Use this sequence independently for all three ports:
 6. Clamp the final result to 0–100%.
 <br>
 Because the sensor relationship is reversed, the basic calculation is:
-<br>
-![Alt Text](https://github.com/kirkrohrig-dot/plant-moisture-sensor-system/blob/main/img/Formula.jpg)
-<br>
+![Alt text](img/Formula.jpg)
+![Alt text](img/Formula.jpg)
 Apply the disconnected check before this formula.
 
