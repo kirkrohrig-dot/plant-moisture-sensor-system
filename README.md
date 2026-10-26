@@ -77,6 +77,8 @@ Place the capacitor and pull-down on the XIAO side of the 10 kΩ resistor. An un
 
 ## Schematic
 
+### NOTE: The actual wiring of the USB ports *does not correspond with the standard pin arrangement* - follow the schematic, not the labels on the pins. This was done to make assembly of the sensors much easier. *Never plug a standard USB accessory or power cable into the Sensor USB ports!!* 
+
 See here for a rough wiring schematic:
 [GitHub](Schematic_0001.png)
 
