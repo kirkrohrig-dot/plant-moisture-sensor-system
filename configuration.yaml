@@ -1,0 +1,93 @@
+    sensor:
+      - name: "Plant 1 Moisture"
+        unique_id: plant_1_moisture
+        unit_of_measurement: "%"
+        state_class: measurement
+
+        availability: >
+          {% set voltage =
+            states('sensor.plant_hub_plant_1_voltage') | float(none) %}
+          {% set dry =
+            states('input_number.plant_1_dry_calibration') | float(none) %}
+          {% set wet =
+            states('input_number.plant_1_wet_calibration') | float(none) %}
+
+          {{ voltage is not none
+             and dry is not none
+             and wet is not none
+             and voltage > 0.10
+             and dry > wet }}
+
+        state: >
+          {% set voltage =
+            states('sensor.plant_hub_plant_1_voltage') | float %}
+          {% set dry =
+            states('input_number.plant_1_dry_calibration') | float %}
+          {% set wet =
+            states('input_number.plant_1_wet_calibration') | float %}
+          {% set moisture =
+            ((dry - voltage) / (dry - wet) * 100) %}
+
+          {{ [[moisture, 0] | max, 100] | min | round(0) }}
+    
+      - name: "Plant 2 Moisture"
+        unique_id: plant_2_moisture
+        unit_of_measurement: "%"
+        state_class: measurement
+
+        availability: >
+          {% set voltage =
+            states('sensor.plant_hub_plant_2_voltage') | float(none) %}
+          {% set dry =
+            states('input_number.plant_2_dry_calibration') | float(none) %}
+          {% set wet =
+            states('input_number.plant_2_wet_calibration') | float(none) %}
+
+          {{ voltage is not none
+             and dry is not none
+             and wet is not none
+             and voltage > 0.10
+             and dry > wet }}
+
+        state: >
+          {% set voltage =
+            states('sensor.plant_hub_plant_2_voltage') | float %}
+          {% set dry =
+            states('input_number.plant_2_dry_calibration') | float %}
+          {% set wet =
+            states('input_number.plant_2_wet_calibration') | float %}
+          {% set moisture =
+            ((dry - voltage) / (dry - wet) * 100) %}
+
+          {{ [[moisture, 0] | max, 100] | min | round(0) }}
+    
+      - name: "Plant 3 Moisture"
+        unique_id: plant_3_moisture
+        unit_of_measurement: "%"
+        state_class: measurement
+
+        availability: >
+          {% set voltage =
+            states('sensor.plant_hub_plant_3_voltage') | float(none) %}
+          {% set dry =
+            states('input_number.plant_3_dry_calibration') | float(none) %}
+          {% set wet =
+            states('input_number.plant_3_wet_calibration') | float(none) %}
+
+          {{ voltage is not none
+             and dry is not none
+             and wet is not none
+             and voltage > 0.10
+             and dry > wet }}
+
+        state: >
+          {% set voltage =
+            states('sensor.plant_hub_plant_3_voltage') | float %}
+          {% set dry =
+            states('input_number.plant_3_dry_calibration') | float %}
+          {% set wet =
+            states('input_number.plant_3_wet_calibration') | float %}
+          {% set moisture =
+            ((dry - voltage) / (dry - wet) * 100) %}
+
+          {{ [[moisture, 0] | max, 100] | min | round(0) }}
