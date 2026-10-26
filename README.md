@@ -78,7 +78,7 @@ Place the capacitor and pull-down on the XIAO side of the 10 kΩ resistor. An un
 ## Schematic
 
 See here for a rough wiring schematic:
-[GitHub](img/Schematic_0001.png)
+[GitHub](Schematic_0001.png)
 
 ### ADC configuration considerations
 
