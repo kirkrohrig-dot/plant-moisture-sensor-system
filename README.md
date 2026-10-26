@@ -49,5 +49,49 @@ The materials needed for the project are as follows:
 | All sensor ground | GND     | GND    |
 | Wall power        | USB-C   | 5V USB |
 
+##Wiring
 
+###Power
+
+The complete power arrangement is:
+<br>
+- XIAO powered through USB-C
+- XIAO 3V3 connected to all three sensor VCC terminals
+- XIAO ground connected to all three sensor grounds
+- One 10 µF capacitor across the 3.3 V and ground distribution rails
+- One 0.1 µF capacitor across VCC and GND at each sensor connector.
+<br>
+Do not power the probes from the XIAO’s 5 V/VBUS pin. A probe powered at 5 V might produce an analog output above the ESP32-C6’s safe 3.3 V input level. Powering the probes from 3.3 V keeps their outputs compatible with the ADC.
+<br>
+###Filtering components
+
+For each channel:
+<br>
+1. Connect sensor AOUT to one end of the 10 kΩ resistor
+2. Connect the other end to the appropriate XIAO ADC pin
+3. Connect the 0.1 µF capacitor between that ADC pin and ground
+4. Connect the 1 MΩ pull-down between that same ADC pin and ground.
+<br>
+Place the capacitor and pull-down on the XIAO side of the 10 kΩ resistor. An unplugged port will read close to zero because of the pull-down. Firmware should therefore classify something such as below 0.10 V as disconnected, rather than interpreting it as extremely wet soil.
+
+###ADC configuration considerations
+
+ESPHome’s ADC component defaults to a lower voltage range unless attenuation is configured. Use attenuation: auto or verify 12db operation because your expected readings extend to approximately 2.6 V.
+  
+###Calibration
+
+Use this sequence independently for all three ports:
+<br>
+1. Measure the unplugged value; it should be near 0 V and flagged as disconnected.
+2. Record the stabilized reading in dry soil.
+3. Saturate the pot fully, allow it to drain normally, and record the wet value.
+4. Use 2.6 V as the dry ceiling to start. This can be adjusted if any sensors return voltage above this cap.
+5. Use each probe’s measured wet reading for 100%; 0.68 V is only an initial reference and can also be adjusted based on individual readings.
+6. Clamp the final result to 0–100%.
+<br>
+Because the sensor relationship is reversed, the basic calculation is:
+<br>
+$$ \text{Moisture} = 100\times \frac{2.60-V_{\text{measured}}} {2.60-V_{\text{wet}}} $$
+<br>
+Apply the disconnected check before this formula.
 
