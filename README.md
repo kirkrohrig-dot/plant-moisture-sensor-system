@@ -90,8 +90,19 @@ Here is my design for the main PCB in the hub unit:
 ### TOP
 
 <img width="1126" height="1150" alt="Top_1" src="https://github.com/user-attachments/assets/78cf320d-c7d6-42b8-9cd9-a070ba352d80" />
-
+<br>
+<br>
 <img width="1126" height="1453" alt="Top_2" src="https://github.com/user-attachments/assets/1c80ccdd-d500-4344-a1f9-6c8a934ac95a" />
+<br>
+
+### BOTTOM
+
+<img width="1126" height="820" alt="Bottom_1" src="https://github.com/user-attachments/assets/35615634-294d-4eda-8043-00691442cbae" />
+<br>
+<br>
+<img width="1126" height="1175" alt="Bottom_2" src="https://github.com/user-attachments/assets/2f1d8fdf-4a9b-4d7d-a16e-7fa7a764b1da" />
+<br>
+
 
 
 ### ADC configuration considerations
