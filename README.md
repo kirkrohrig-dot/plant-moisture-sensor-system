@@ -9,19 +9,35 @@ The Home Assistant Zigbee integration exposes individual sensor voltages along w
 
 The materials needed for the project are as follows:
 
-1	Seeed Studio XIAO ESP32-C6	
-3	10 kΩ resistors	(series protection/filtering for analog outputs)
-3	0.1 µF ceramic capacitors	(analog input noise filtering)
-3	1 MΩ resistors (pull-downs to give unplugged inputs a defined state)
-1	10 µF electrolytic or ceramic capacitor	
-3	0.1 µF ceramic capacitors	(local bypass capacitor at each sensor connector)
-1	Small perfboard 
-1	USB-C cable	(USB 2.0 minimum for firmware upload, after that a charging-only cable may be used for ongoing operation)
-1	UL-listed 5 V USB wall adapter, 1 A or greater
+MASTER HUB UNIT
 
+1x	Seeed Studio XIAO ESP32-C6
 
-3	MusRock analog capacitive soil-moisture sensors (https://www.amazon.com/Corrosion-Resistant-Capacitive-Moisture-Arduino/dp/B0FGD5H8X3/ref=sr_1_3?s=hi&sr=1-3)
-3 Female USB-C ports (https://www.amazon.com/dp/B0F3WS4TQS)
-3 USB-C cables (require data - USB2.0 or above)
-6 M2.5 x 6mm screws
-6 M2.5 Brass inserts
+3x	10 kΩ resistors	(series protection/filtering for analog outputs)
+   
+3x	0.1 µF ceramic capacitors	(analog input noise filtering)
+   
+3x	1 MΩ resistors (pull-downs to give unplugged inputs a defined state)
+   
+1x	10 µF electrolytic or ceramic capacitor	
+
+3x	0.1 µF ceramic capacitors	(local bypass capacitor at each sensor connector)
+
+1x	Small perfboard 
+
+1x	USB-C cable	(USB 2.0 minimum for firmware upload, after that a charging-only cable may be used for ongoing operation)
+
+1x	UL-listed 5 V USB wall adapter, 1 A or greater
+
+SENSORS
+
+3x	MusRock analog capacitive soil-moisture sensors (https://www.amazon.com/Corrosion-Resistant-Capacitive-Moisture-Arduino/dp/B0FGD5H8X3/ref=sr_1_3?s=hi&sr=1-3)
+
+3x Female USB-C ports (https://www.amazon.com/dp/B0F3WS4TQS)
+
+3x USB-C cables (require data - USB2.0 or above)
+
+6x M2.5 x 6mm screws
+
+6x M2.5 Brass inserts
+
