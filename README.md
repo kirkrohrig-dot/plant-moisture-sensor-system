@@ -38,3 +38,16 @@ The materials needed for the project are as follows:
 
 6x M2.5 x 6mm screws  
 
+## Pin Assignment
+
+| Connection | ESP32-C6 Label | ESPHome Pin |
+| -------- | -------- | -------- |
+| Plant 1 Signal    | D0/A0   | GPIO0  |
+| Plant 2 Signal    | D1/A1   | GPIO1  |
+| Plant 3 Signal    | D2/A2   | GPIO2  |
+| All sensor power  | 3V3     | 3.3V   |
+| All sensor ground | GND     | GND    |
+| Wall power        | USB-C   | 5V USB |
+
+
+
