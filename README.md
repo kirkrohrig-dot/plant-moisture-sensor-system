@@ -75,6 +75,11 @@ For each channel:
 <br>
 Place the capacitor and pull-down on the XIAO side of the 10 kΩ resistor. An unplugged port will read close to zero because of the pull-down. Firmware should therefore classify something such as below 0.10 V as disconnected, rather than interpreting it as extremely wet soil.
 
+## Schematic
+
+See here for a rough wiring schematic:
+[GitHub](img/Schematic_0001.png)
+
 ### ADC configuration considerations
 
 ESPHome’s ADC component defaults to a lower voltage range unless attenuation is configured. Use attenuation: auto or verify 12db operation because your expected readings extend to approximately 2.6 V.
