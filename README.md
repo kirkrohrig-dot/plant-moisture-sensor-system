@@ -113,7 +113,42 @@ Here is my design for the main PCB in the hub unit:
 <br>
 <img width="450" height="549" alt="Sensor_1" src="https://github.com/user-attachments/assets/27931285-185b-4957-a7f1-c876f67dcee0" />\
 <br>
-
+2. Lay a thin layer of mounting putty on the mounting strip near the center of the top shell. Lay the sensor assembly into the shell lining up the screw holes and press to attach, keeping it level with the shell.
+<br>
+<br>
+3. Snap the USB socket piece into the corresponding hole in the bottom shell and set aside. Then, slide the female USB port breakout board onto the pins with the top of the board facing inward.
+<br>
+<br>
+4. Place a couple of drops of super glue onto the USB socket mounting plate and carefully lower the bottom shell down onto the top shell and snap together, ensuring that the USB socket and hole line up.
+<br>
+<br>
+5. After the glue has set on the USB port, turn the sensor over and gently remove the top cover. It is still held on by the putty so may take some wiggling. If the putty is stuck to the board, remove it and re-attach to the mounting plate on the shell.
+<br>
+<br>
+6. Attach two M2.5 screws/nuts through the sensor holes to hold it in place. Finger tighten only.
+<br>
+<br>
+7. Glue the USB socket piece to the shell body with a few drops of super glue around the edges.
+<br>
+<br>
+8. Solder the pins to the pads on the USB port and trim off excess.
+<br>
+<br>
+9. Install M2.5 brass inserts into the screw mounts on the bottom shell.
+<br>
+<br>
+10. Remove the holding screws/nuts from the sensor probe, then reassemble both halves and screw together through the external holes on the bottom shell.
+<br>
+<br>
+11. Test sensor with USB cable and Hub to make sure all connections and voltages are as expected.
+<br>
+<br>
+12. Seal the outer edges of the sensor probe with clear epoxy or nail polish.
+<br>
+<br>
+13. Apply silicone caulk to any gap on the unit where water could enter, including the screws/holes. Use an allen wrench to clear excess caulk from the screw heads in case it needs to be opened in the future. Smooth with finger.
+<br>
+<br>
 
 ### ADC configuration considerations
 
