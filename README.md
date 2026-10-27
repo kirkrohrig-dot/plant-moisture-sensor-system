@@ -86,13 +86,15 @@ See here for a rough wiring schematic:
 
 Here is my design for the main PCB in the hub unit:
 <br>
-
+<br>
 ### TOP
 
 <img width="1126" height="1150" alt="Top_1" src="https://github.com/user-attachments/assets/78cf320d-c7d6-42b8-9cd9-a070ba352d80" />
 <br>
 <br>
+<br>
 <img width="1126" height="1453" alt="Top_2" src="https://github.com/user-attachments/assets/1c80ccdd-d500-4344-a1f9-6c8a934ac95a" />
+<br>
 <br>
 
 ### BOTTOM
@@ -102,7 +104,15 @@ Here is my design for the main PCB in the hub unit:
 <br>
 <img width="1126" height="1175" alt="Bottom_2" src="https://github.com/user-attachments/assets/2f1d8fdf-4a9b-4d7d-a16e-7fa7a764b1da" />
 <br>
+<br>
+<br>
 
+## Sensor Assembly
+
+1. Attach the sensor probe to the included converter board by soldering the pins together. Push them together as far as they will go.
+<br>
+<img width="450" height="549" alt="Sensor_1" src="https://github.com/user-attachments/assets/27931285-185b-4957-a7f1-c876f67dcee0" />\
+<br>
 
 
 ### ADC configuration considerations
