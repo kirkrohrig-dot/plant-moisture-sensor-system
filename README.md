@@ -36,7 +36,17 @@ The materials needed for the project are as follows:
 
 3x USB-C cables (require data - USB2.0 or above)  
 
-6x M2.5 x 6mm screws  
+6x M2.5 x 10mm screws  
+
+## MISC SUPPLIES 
+
+Super Glue (i.e. Krazy Glue)  
+
+Mounting Putty  
+
+Fast Dry Acrylic Latex Caulk with Silicone
+
+
 
 ## Pin Assignment
 
