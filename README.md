@@ -93,7 +93,7 @@ Here is my design for the main PCB in the hub unit:
 <br>
 <br>
 <br>
-<img width="2252" height="2906" alt="Top_2_markup" src="https://github.com/user-attachments/assets/35685557-e6ef-4a47-ad4d-33356f1aee31" />
+<img width="2252" height="2906" alt="Top_2_markup" src="https://github.com/user-attachments/assets/37e447e5-5b3e-42ed-8733-fb526fe30e07" />
 <br>
 <br>
 
