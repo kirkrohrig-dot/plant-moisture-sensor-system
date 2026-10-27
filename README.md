@@ -115,15 +115,19 @@ Here is my design for the main PCB in the hub unit:
 <br>
 2. Lay a thin layer of mounting putty on the mounting strip near the center of the top shell. Lay the sensor assembly into the shell lining up the screw holes and press to attach, keeping it level with the shell.
 <br>
+<img width="450" height="370" alt="Putty" src="https://github.com/user-attachments/assets/50b06406-a5bd-40d8-ab82-2fb2d403775c" />
 <br>
 3. Slide the female USB port breakout board onto the pins with the top of the board facing inward. Then, snap the top shell onto the bottom shell, with the USB port protruding through the hole.
 <br>
+<img width="450" height="379" alt="USB_board" src="https://github.com/user-attachments/assets/a410ffe9-a29c-459e-81dd-1d6244a0fd4b" />
 <br>
 4. Place a couple of drops of super glue onto the USB socket mounting plate and carefully lower the USB socket piece shell down onto the top shell and snap together, ensuring that the USB socket and hole line up. Glue the USB socket piece to the shell body with a few drops of super glue around the edges.
 <br>
+<img width="450" height="392" alt="USB_seal" src="https://github.com/user-attachments/assets/6c5bf398-a6a9-47fa-bc0e-c2c7efbb6af5" />
 <br>
 5. After the glue has set on the USB port, turn the sensor over and gently remove the top cover. It is still held on by the putty so may take some wiggling. If the putty is stuck to the board, remove it and re-attach to the mounting plate on the shell.
 <br>
+<img width="335" height="195" alt="Reopen" src="https://github.com/user-attachments/assets/6e20bdd2-a852-4a74-b10e-5ce85e1083ab" />
 <br>
 6. Attach two M2.5 screws/nuts through the sensor holes to hold it in place. Finger tighten only.
 <br>
