@@ -157,10 +157,6 @@ Here is my design for the main PCB in the hub unit:
 <br>
 <br>
 
-### ADC configuration considerations
-
-ESPHome’s ADC component defaults to a lower voltage range unless attenuation is configured. Use attenuation: auto or verify 12db operation because your expected readings extend to approximately 2.6 V.
-  
 ### Calibration
 
 Use this sequence independently for all three ports:
