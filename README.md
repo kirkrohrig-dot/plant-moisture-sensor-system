@@ -146,8 +146,8 @@ Here is my design for the main PCB in the hub unit:
 9. Remove the holding screws/nuts from the sensor probe, then reassemble both halves and screw together through the external holes on the bottom shell.</br>
 <br>
 <img width="450" height="251" alt="Screws" src="https://github.com/user-attachments/assets/1c4b54c7-c7e4-4a36-9333-a441d48ab8d5" /></br>
-<br>
-10. Test sensor with USB cable and Hub to make sure all connections and voltages are as expected.</br>
+<br></br>
+10. Test sensor with USB cable and Hub to make sure all connections and voltages are as expected.
 <br>
 <br>
 11. Seal the outer edges of the sensor probe with clear epoxy or nail polish.
