@@ -117,6 +117,8 @@ Here is my design for the main PCB in the hub unit:
 <br>
 <img width="450" height="370" alt="Putty" src="https://github.com/user-attachments/assets/50b06406-a5bd-40d8-ab82-2fb2d403775c" />
 <br>
+<img width="364" height="329" alt="Mount" src="https://github.com/user-attachments/assets/1f109c9c-fc34-4526-88b2-2a125954c230" />
+<br>
 3. Slide the female USB port breakout board onto the pins with the top of the board facing inward. Then, snap the top shell onto the bottom shell, with the USB port protruding through the hole.
 <br>
 <img width="450" height="379" alt="USB_board" src="https://github.com/user-attachments/assets/a410ffe9-a29c-459e-81dd-1d6244a0fd4b" />
