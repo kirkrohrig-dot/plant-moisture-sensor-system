@@ -111,7 +111,7 @@ Here is my design for the main PCB in the hub unit:
 
 1. Attach the sensor probe to the included converter board by soldering the pins together. Push them together as far as they will go.
 <br>
-<img width="450" height="549" alt="Sensor_1" src="https://github.com/user-attachments/assets/27931285-185b-4957-a7f1-c876f67dcee0" />\
+<img width="450" height="549" alt="Sensor_1" src="https://github.com/user-attachments/assets/27931285-185b-4957-a7f1-c876f67dcee0" /></br>
 <br>
 2. Lay a thin layer of mounting putty on the mounting strip near the center of the top shell. Lay the sensor assembly into the shell lining up the screw holes and press to attach, keeping it level with the shell.
 <br>
